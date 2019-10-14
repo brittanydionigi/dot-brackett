@@ -1,11 +1,9 @@
 import React, { useState, useEffect, useLayoutEffect } from 'react';
-import hljs from '../node_modules/highlight.js/lib/highlight';
-
-import CodeSelection from './CodeSelection';
-
 import './App.css';
-import '../node_modules/highlight.js/styles/a11y-dark.css';
-
+import CodeSelection from './CodeSelection';
+import '../node_modules/highlight.js/styles/a11y-dark.css'
+import Highlight from 'react-highlight';
+import hljs from '../node_modules/highlight.js/lib/highlight';
 
 let syntaxOptions = ['stockInvestments[stockSymbol]', 'stockInvestments.stockSymbol'];
 
@@ -16,11 +14,11 @@ function PracticeArea() {
         document.querySelectorAll('pre code').forEach((block) => {
             hljs.highlightBlock(block);
           });
-    });
+    })
 
     function bubbleClick(codeSelection) {
         setSelectedFillIn(codeSelection.id);
-    };
+    }
 
   return (
     <div id="practice-area">
@@ -39,7 +37,7 @@ function PracticeArea() {
                     let totalInvested = `}</code><CodeSelection id="fillIn-B" text="access the price of stockDetails"></CodeSelection><code>{` * `}</code><CodeSelection id="fillIn-C" text="access the shares of stockDetails"></CodeSelection><code>{`;
                     return totalInvested;
                 }
-
+                
                 getTotalInvested('amzn');
     `}</code></pre>
             <button id="run-code">Run the Code!</button>
