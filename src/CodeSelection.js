@@ -3,15 +3,14 @@ import './CodeSelection.css';
 
 function CodeSelection(props) {
   function showOptions() {
-    console.log('hey!');
+    console.log('display modal of syntax options');
   }
 
   return (
-    <span 
+    <div 
       id={props.id}
       className="CodeSelection"
-      onClick={() => showOptions()}
-    >{props.text} Selected: {props.selected ? 'hey' : 'no'}</span>
+    >{props.text}</div>
 
   );
 }

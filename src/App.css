@@ -19,4 +19,14 @@
 
 code {
   line-height: 1.5em;
+  font-size: 1em;
 }
+
+.prewrap {
+  white-space: pre-wrap;
+}
+
+pre { display: block; background-color: #2b2b2b; }
+
+.hljs { display: inline !important; background-color: rgba(0,0,0,0) !important; }
+.hljs span { display: inline; line-height: 1.75em; }

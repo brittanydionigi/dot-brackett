@@ -1,11 +1,15 @@
 .CodeSelection {
   border-bottom: 1px solid #fff;
   border-radius: 5px;
-  line-height: 0.7em;
+  font-size: 1em;
+  font-family: 'Menlo';
   font-weight: 900;
   color: #f44c69;
   transition: all ease .5s;
   padding: 2px 5px;
+  display: inline;
+  position: relative;
+  z-index: 10;
 }
 
 .CodeSelection:hover {
